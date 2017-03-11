@@ -1,0 +1,89 @@
+page-home{
+
+        ion-content{
+        background-image: url('../assets/img/fondo2.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align:center;
+    }
+
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .botoneshome{
+    width: 80%;
+    background:white;
+    color: $primary;
+  }
+
+  #botonbuscar{
+     background: $primary;
+     color: white;
+  }
+
+  #containerbotones{
+        margin-top: 60%;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.5em;
+    width: 100%;
+    color: #fff;
+    text-shadow: 2px 2px 5px #888888;
+  }
+
+  .card-subtitle {
+    font-weight: bold;
+    font-size: 3.0em;
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    color: #fff;
+    text-shadow: 2px 2px 5px #888888;
+  }
+}
+
+ion-segment{
+    background: #124670;
+}
+
+.platform-ios ion-segment{
+    width: 70%; 
+    height: 3.2rem;
+    margin: auto;
+    background: none;
+    margin-top: 10px;
+}
+
+.label-md{
+  margin: 0;
+}
+ion-card.adv-map p {
+  font-size: 0.7em !important;
+}
+
+button[fab].fab-map {
+  top: calc(100% - 35px);
+  z-index: 50;
+}
+
+.item-bold {
+  font-weight: bold;
+}
+
+ion-content.cards-bg {
+  background-color: #f4f4f7;
+}
+.button-inner div{
+      font-size: 2em;
+}
+.card-content-md {
+  padding-bottom:0;
+}
+}

@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar color="primary"> 
+    <ion-title>Carrito</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="list-avatar-page" >
+<ion-card>
+  <ion-list> 
+  
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-left>
+          <img [src]="'assets/img/adidas.jpg'">
+        </ion-avatar>
+        <h2>Adidas Predator</h2>
+        <p><s style="color: #f00">105.99€</s> <strong color="primary">84.99€</strong></p>
+        <ion-note item-right class="cant"><span (tap)="decrement($event)" class="contador">-</span><span class="cantidad">{{ cantidad }}</span><span (tap)="increment($event)" class="contador2">+</span></ion-note>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="remove(receta)">
+          <ion-icon class="iconoeliminar"name="trash"></ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+      <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-left>
+          <img [src]="'assets/img/adidas-m.jpg'">
+        </ion-avatar>
+        <h2>Adidas Mujer</h2>
+          <p><s style="color: #f00">70.95€</s> <strong color="primary">40.95€</strong></p>
+        <ion-note item-right class="cant"><span class="contador">-</span><span class="cantidad" >25</span><span class="contador2">+</span></ion-note>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="remove(receta)">
+          <ion-icon class="iconoeliminar"name="trash"></ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+     
+
+      
+  </ion-list>
+</ion-card>
+
+  
+</ion-content>
+  
+  <ion-footer class="pie" no-border no-shadow >
+    <ion-toolbar color="light" hide-on-scroll="true">
+      <ion-grid>
+        <ion-row center>
+          <ion-col width-50 class="linea-total"><span class="total">Total</span> <strong>204,08 €</strong></ion-col>
+          <ion-col width-50 class="boton-pagar"><button (tap)="pagar()" ion-button color="primary"><ion-icon name="card"></ion-icon>Pagar</button></ion-col>
+        </ion-row>
+     </ion-grid>
+    </ion-toolbar>
+  </ion-footer>

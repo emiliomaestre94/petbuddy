@@ -1,0 +1,75 @@
+page-carrito {
+    .content-md{
+        background-color: #eee;
+    }
+    ion-note {
+        font-size: 12px;
+        align-self: flex-start;
+        margin-top: 14px;
+    }
+    .iconoeliminar{
+        font-size: 1.4em;
+    }
+   .linea-total{
+       text-align: right;
+       color: $primary;
+   }
+   .linea-total strong{
+        font-size: 30px;
+   }
+    .linea-total .total{
+        font-size: 18px;
+    }
+   
+    .boton-pagar{  
+        text-align: center;
+    }
+
+    .boton-pagar ion-icon{
+        margin-right: 5px;
+    }
+    .boton-pagar button{
+        font-size: 18px;
+    }
+
+    .card-md{
+        margin: 0;
+        width: calc(100% - 0px)
+    }
+    .list-md ion-item-sliding{
+        border-bottom: 1px solid #eee;
+    }
+    .cant{
+        margin-top: 20px;
+    }
+
+    .cantidad{
+         border: 1px solid #a3a3a3;
+        background: #a3a3a3;
+        padding: 5px;
+        color: #fff;
+    }
+
+    .contador{
+        border: 1px solid #a3a3a3;
+        padding: 5px 6px;
+        color: #000;
+    }
+
+    .contador2{
+        border: 1px solid #a3a3a3;
+        padding: 5px;
+        color: #000;
+    }
+
+    h2{
+        font-weight:bold;
+    }
+    .item-md ion-avatar ion-img, .item-md ion-avatar img{
+        margin-left: 10px;
+    }
+    .item-md [item-left], .item-md [item-right] {
+        margin: 25px 8px 9px 0;
+    }
+}
+ 

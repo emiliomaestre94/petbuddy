@@ -1,0 +1,62 @@
+page-principal {
+
+    #mitadarriba{
+        text-align: center;
+        height:50vh;
+        background-color: #eaeaea;
+    }
+    #mitadabajo{
+        height:50vh;
+        background-color:$primary;
+        text-align: center;
+    }
+    ion-icon{
+            position: fixed;
+    left: 14px
+    }
+    
+#logo{
+    margin-top:10%;
+    width:60%;
+}
+
+.botoncicos{
+    background: white;
+    color: $primary;
+}
+
+
+.botoneslogin{
+    padding-bottom: 23px;
+    text-transform: none;
+    width: 90%;
+    font-size: 1.15em;
+    padding-top: 23px;
+    color:white;
+}
+
+.botonescorreo{
+    padding-bottom: 23px;
+    text-transform: none;
+    width: 40%;
+    font-size: 1.15em;
+    padding-top: 23px;
+    color: white;
+    border-color: white;
+    margin-top:3%;
+        background: white;
+    color: $primary;
+}
+#face{
+    margin-top:30%;
+    color: white;
+    background-color: #3b5998;
+}
+#google{
+     background-color: #df4a32;
+}
+ ion-icon{
+            position: fixed;
+    left: 14px
+    }
+}

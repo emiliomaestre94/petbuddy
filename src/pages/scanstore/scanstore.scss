@@ -1,0 +1,115 @@
+page-scanstore, menu-menu {
+    
+    .cabecera-menu{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cabecera-menu p{
+    font-size: 18px;
+    color:#fff;
+}
+.cabecera-menu img{
+    border-radius: 100%;
+}
+
+.platform-ios .cabecera-menu p{
+  color: #000;
+}
+
+.correo{
+    margin-top: -15px;
+    font-size: 10px;
+}
+
+.nombre{
+    margin-top: -2px;
+
+}
+
+
+.scan p{
+text-align: center;
+color: #124670;
+font-size: 20px;
+
+}
+
+
+.lista-menu2 ion-icon, .lista-menu1 ion-icon{
+    margin-right: 20px;
+}
+
+.item-md.item-block .item-inner{
+    border:none;
+}
+
+
+
+.lista-menu2{
+    margin-top: 20px;
+
+}
+
+.lista-menu1{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+
+//FONDO MENU
+.menu-inner .content-md{
+background: $primary;
+
+}
+
+.item-md{
+    padding-left: 0px;
+}
+.solution{
+    background: transparent;
+}
+
+.lista-menu1 .item-md.activated, .lista-menu2 .item-md.activated{
+   background: $primary;
+}
+
+.label-md{
+    color: #fff;
+}
+
+img.qr{
+    height: 200px;
+    margin-top: 50px;
+}
+
+ion-segment{
+    background: $primary;
+   color: $primary;
+}
+ion-segment-button.segment-button{
+ // color: $primary;
+}
+.item-md.item-block .item-inner{
+    padding-right: 0px;
+}
+
+.lista-menu1 ion-icon, .lista-menu2 ion-icon{
+    margin-left: 20px;
+}
+
+.platform-android ion-title{
+    text-align: center;
+    margin-left: -16px;
+}
+.menu-inner{
+    width: 250px;
+}
+    
+}
+
+page-scanstore{
+    ion-title{
+        text-align: center;
+        margin-top: 5px;
+    }
+}

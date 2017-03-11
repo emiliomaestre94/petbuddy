@@ -1,0 +1,68 @@
+<ion-header no-shadow no-border>
+  <ion-navbar color="primary" >
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+   
+    <ion-title>Mi Perfil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content scroll>
+ <div  id="fondoperfil">
+   <img margin-top [src]="'assets/img/perfil.jpg'" />
+    <ion-fab>
+      <button (click)="SeleccionarGaleria();" color="secondary" mini ion-fab><ion-icon name='camera' item-right style="color: gray"></ion-icon></button>
+   </ion-fab>
+   
+   <h2>Jhon Doe</h2>
+ </div>
+
+ <div no-margin id="misdatos">
+   <h3 no-margin>Mis datos</h3>
+ </div>
+
+<div id="formulario">
+
+
+    <ion-item>
+      <ion-label active activated color="primary" stacked>Correo electrónico</ion-label>
+      <ion-input  id="correo" type="email" value="info@appay.es"></ion-input>
+       <ion-icon name='create' item-right style="color: gray"></ion-icon>
+    </ion-item>
+
+      <ion-item>
+      <ion-label color="primary" stacked>DNI</ion-label>
+      <ion-input type="text" value="99999999H"></ion-input>
+      <ion-icon name='create' item-right style="color: gray"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Nombre</ion-label>
+      <ion-input color="#fffff" type="text" value="Jhon Doe"></ion-input>
+      <ion-icon name='create' item-right style="color: gray"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Dirección</ion-label>
+      <ion-input type="text" value="Paseo de las Azucenas 8A"></ion-input>
+      <ion-icon name='create' item-right style="color: gray"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Código Postal</ion-label>
+      <ion-input type="text" value="03690"></ion-input>
+      <ion-icon name='create' item-right style="color: gray"></ion-icon>
+    </ion-item>
+
+    
+
+
+</div>
+<div id="containerboton">
+      <button id="botonacceder" ion-button >
+      Guardar datos
+    </button>
+</div>
+</ion-content> 
+ 

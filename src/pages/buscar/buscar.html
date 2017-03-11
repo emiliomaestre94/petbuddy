@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar color="primary">
+
+    <ion-title>
+    Buscar
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+<ion-item>
+  <ion-label color="primary" >Comunidad</ion-label>
+    <ion-select [(ngModel)]="municipio">
+      <ion-option >Female</ion-option>
+      <ion-option >Male</ion-option>
+    </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label color="primary" >Provincia</ion-label>
+    <ion-select [(ngModel)]="municipio">
+      <ion-option >Female</ion-option>
+      <ion-option >Male</ion-option>
+    </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label color="primary" >Municipio</ion-label>
+    <ion-select [(ngModel)]="municipio">
+      <ion-option >Female</ion-option>
+      <ion-option >Male</ion-option>
+    </ion-select>
+</ion-item>
+
+
+  <ion-item>
+    <ion-label color="primary" fixed>Fecha</ion-label>
+    <ion-input type="date" placeholder="Tel Input"></ion-input>
+  </ion-item>
+<ion-item>
+
+
+  <ion-label color="primary">Tipo Mascota</ion-label>
+  <ion-select [(ngModel)]="mascotas" multiple="true">
+    <ion-option>Gato</ion-option>
+    <ion-option>Perro</ion-option>
+    <ion-option>Roedor</ion-option>
+    <ion-option>Gallina</ion-option>
+    <ion-option>Poni</ion-option>
+    <ion-option>Monstruo</ion-option>
+  </ion-select>
+</ion-item>
+</ion-list>
+<div style="text-align:center">
+<button class="botoneshome" id="botonbuscar" ion-button>Buscar</button>
+</div>
+</ion-content>

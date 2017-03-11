@@ -1,0 +1,131 @@
+<ion-header>
+  <ion-navbar color="primary">
+
+    <ion-title style="text-align:center">
+    <img style="width: 38%;"src="assets/petbuddy.png" />
+    </ion-title>
+  </ion-navbar>
+
+  <!--La barra de ofertas -->
+   <ion-segment [(ngModel)]="deal">
+      <ion-segment-button value="ofertas">
+        Actuales 
+      </ion-segment-button>
+      <ion-segment-button value="personalizadas">
+        Historial
+      </ion-segment-button>
+    </ion-segment>
+</ion-header>
+
+<ion-content class="card-background-page">
+
+<!---
+  <ion-fab right bottom>
+    <button [navPush]="scanProduct" ion-fab color="primary"><ion-icon name="camera"></ion-icon></button>
+  </ion-fab>-->
+  
+  <div [ngSwitch]="deal">
+  <ion-list *ngSwitchCase="'ofertas'">
+    <div *ngIf="ofertas" >
+      <h1  style="color:white">¿Vas a dejarlo solo?</h1>
+      <h4  style="color:white" >¡Deja que alguien de confianza cuide de tu mascota!</h4>
+      <div id="containerbotones">
+        <button (click)="navegarPublicar();" class="botoneshome" ion-button >Publicar</button> 
+        <button (click)="navegarBuscar();" class="botoneshome" id="botonbuscar" ion-button>Buscar</button>
+      </div>
+    </div>
+
+    <div *ngIf="!ofertas" >
+      <ion-card (click)="irachat()">
+        <ion-item>
+          <ion-avatar item-left padding-left>
+            <img [src]="'assets/img/perfil.jpg'">
+          </ion-avatar>
+          <h2>Cuidador de gato para el lunes</h2>
+          <p>Pablo Mac</p>
+          <p>16:23</p>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item>
+          <ion-avatar item-left padding-left>
+            <img [src]="'assets/img/perfil.jpg'">
+          </ion-avatar>
+          <h2>Cuidador de gato para el lunes</h2>
+          <p>Pablo Mac</p>
+          <p>16:23</p>
+        </ion-item>
+      </ion-card>
+
+            <ion-card>
+        <ion-item>
+          <ion-avatar item-left padding-left>
+            <img [src]="'assets/img/perfil.jpg'">
+          </ion-avatar>
+          <h2>Cuidador de gato para el lunes</h2>
+          <p>Pablo Mac</p>
+          <p>16:23</p>
+        </ion-item>
+      </ion-card>
+
+    </div>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'personalizadas'">
+    <div *ngIf="historial" >
+      <h2  style="color:white">No tienes actividad reciente</h2>
+    </div>
+
+    <div *ngIf="!historial" >
+      <ion-card>
+        <ion-item>
+          <ion-avatar item-left padding-left>
+            <img [src]="'assets/img/perfil.jpg'">
+          </ion-avatar>
+          <h2>Marty McFly</h2>
+          <p>November 5, 1955</p>
+        </ion-item>
+        
+        <ion-card-content>
+          <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col>
+            <button  style="float:right;" ion-button clear small>
+              <div>23€</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+          <ion-avatar item-left padding-left>
+            <img [src]="'assets/img/perfil.jpg'">
+          </ion-avatar>
+          <h2>Marty McFly</h2>
+          <p>November 5, 1955</p>
+        </ion-item>
+        
+        <ion-card-content>
+          <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col>
+            <button  style="float:right;" ion-button clear small>
+              <div>23€</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </div>
+
+  </ion-list>
+  </div>
+
+
+
+</ion-content>
+

@@ -1,0 +1,46 @@
+page-registro {
+    .toolbar-background-md {
+        border-color: none; 
+        background: none; 
+    }
+    .toolbar-title-md{
+        color:white;
+    }
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+        color: white;
+    }
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before
+    {
+        background-image:none;
+    }
+
+    #botonacceder{
+        padding-bottom: 23px;
+        text-transform: none;
+        width: 100%;
+        font-size: 1.15em;
+        padding-top: 23px;
+        color: white;
+        background-color: $primary;
+    }
+    .list-md{
+       // margin-top: 31%;
+    }
+    p{
+        color:white;
+    }
+    a{
+        text-decoration:underline;
+        color: white;
+    }
+     ion-content{
+        background-image: url('../assets/img/fondo2.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align:center;
+    }
+
+    ion-icon{
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-buttons end>
+      <button (tap) = "carrito()" ion-button icon-only color="royal">
+         <div class="numberCircle">30</div>
+        <ion-icon name="cart"></ion-icon>
+       
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Play Station 4
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content parallax-header>
+
+    <div class="imagen">
+    <ion-fab>
+       <button (tap) = "presentToast()" ion-fab color="light" mini><img src="assets/add-cart-black.png"/></button>
+    </ion-fab>
+    </div>
+
+    <ion-grid>
+      <ion-row center>
+        <ion-col width-50><h2 class="precio">240,95€</h2></ion-col>
+        <ion-col width-50><ion-note item-right class="cant"><span (tap)="decrement($event)" class="contador">-</span><span class="cantidad">{{ cantidad }}</span><span (tap)="increment($event)" class="contador2">+</span></ion-note></ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    
+    
+
+         <span class="num-producto">Num. Producto: 2341414324324134</span>
+
+        <p>Nada volverá a ser igual cuando pruebes la PS4 Pro. Esta consola, desarrollada por Sony te proporciona una experiencia de entretenimiento única. No sólo podrás jugar a otro nivel, con mejores gráficos y mayor fluidez, sinó que podrás disfrutar de tus películas y series favoritas de Netflix y otras app similares.</p>
+
+
+    <br>
+    <p class="tutorial">Video</p>
+    <div class="video-container">
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/z9Ul9ccDOqE" frameborder="0" allowfullscreen > </iframe>
+    </div>
+
+</ion-content>

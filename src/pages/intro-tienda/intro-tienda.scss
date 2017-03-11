@@ -1,0 +1,24 @@
+page-intro-tienda {
+    #BodyIntroTienda{
+        background-color:$primary;
+        text-align:center;
+        color:white;
+    }
+    #ContainerIntroTienda{
+        width:80%;
+        margin:0 auto;
+        margin-top:-6pc;
+    }
+
+    #fotofondo{
+        height:50vh;
+        max-width: none;
+    }
+    #imagenlogo{
+        width: 150;
+        height: 150px;
+        border-radius: 300px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}  
+

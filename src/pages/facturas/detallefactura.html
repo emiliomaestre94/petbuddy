@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+     Factura {{ factura.title }}
+    </ion-title>
+     <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <img src="assets/pdf.png" class="pdf"/>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+            <ion-card-content>
+                  <ion-row class="info">
+                      <ion-col><strong>{{ factura.title }} </strong></ion-col>
+                      <ion-col class="num-fact">NUM: {{ factura.id }}</ion-col>
+                  </ion-row>
+
+                  <ion-row class="info">
+                    <ion-col class="direccion">{{ factura.direccion }} - {{ factura.ciudad }} ({{ factura.provincia }}) {{ factura.cp }}</ion-col>
+                  </ion-row>
+
+                  <ion-row class="info">
+                    <ion-col class="fecha">{{ factura.fecha }} · {{ factura.hora }}</ion-col>
+                  </ion-row>
+      </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    
+  </ion-grid>
+
+
+  <ion-card class="productos">
+    <ion-row>
+      <ion-col width-10>1<span class="cant">x</span></ion-col>
+      <ion-col width-70>Coca Cola Zero</ion-col>
+      <ion-col width-20><strong class="precio">0,49€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>2<span class="cant">x</span></ion-col>
+      <ion-col width-70>Barra de pan</ion-col>
+      <ion-col width-20><strong>0,90€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>3<span class="cant">x</span></ion-col>
+      <ion-col width-70>Caja de galletas Hacendado</ion-col>
+      <ion-col width-20><strong>3,85€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>10<span class="cant">x</span></ion-col>
+      <ion-col width-70>Chocolate Milka con caramelo</ion-col>
+      <ion-col width-20><strong>23,34€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>5<span class="cant">x</span></ion-col>
+      <ion-col width-70>Caramelos</ion-col>
+      <ion-col width-20><strong>53,34€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>1<span class="cant">x</span></ion-col>
+      <ion-col width-70>Langostinos Hacendado</ion-col>
+      <ion-col width-20><strong>23,34€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>1<span class="cant">x</span></ion-col>
+      <ion-col width-70>Fanta de limón</ion-col>
+      <ion-col width-20><strong>0,44€</strong></ion-col>
+    </ion-row>
+      <ion-row>
+      <ion-col width-10>5<span class="cant">x</span></ion-col>
+      <ion-col width-70>Caramelos</ion-col>
+      <ion-col width-20><strong>53,34€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>1<span class="cant">x</span></ion-col>
+      <ion-col width-70>Langostinos Hacendado</ion-col>
+      <ion-col width-20><strong>23,34€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>1<span class="cant">x</span></ion-col>
+      <ion-col width-70>Fanta de limón</ion-col>
+      <ion-col width-20><strong>0,44€</strong></ion-col>
+    </ion-row>
+      <ion-row>
+      <ion-col width-10>5<span class="cant">x</span></ion-col>
+      <ion-col width-70>Caramelos</ion-col>
+      <ion-col width-20><strong>53,34€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>1<span class="cant">x</span></ion-col>
+      <ion-col width-70>Langostinos Hacendado</ion-col>
+      <ion-col width-20><strong>23,34€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>1<span class="cant">x</span></ion-col>
+      <ion-col width-70>Fanta de limón</ion-col>
+      <ion-col width-20><strong>0,44€</strong></ion-col>
+    </ion-row>
+     <ion-row>
+      <ion-col width-10>5<span class="cant">x</span></ion-col>
+      <ion-col width-70>Caramelos</ion-col>
+      <ion-col width-20><strong>53,34€</strong></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-10>1<span class="cant">x</span></ion-col>
+      <ion-col width-70>Langostinos Hacendado</ion-col>
+      <ion-col width-20><strong>23,34€</strong></ion-col>
+    </ion-row>
+    
+   
+  
+  </ion-card>
+
+
+</ion-content>
+
+<ion-footer class="pie" no-border no-shadow >
+    <ion-toolbar color="light" hide-on-scroll="true">
+      <ion-row>
+        <ion-col width-30 class="importe"><strong color="primary">Importe: 40,83€</strong></ion-col>
+        <ion-col width-40 class="iva"><strong color="primary">IVA: 10,40€</strong></ion-col>
+        <ion-col width-30 class="total"><strong  color="primary">50,50€</strong></ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="funnel"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Mis pedidos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+  
+  <ion-list>
+    <ion-item-sliding *ngFor="let factura of facturas">
+
+        <button class="botones-facturas" ion-item (click)="abrirDetalleFactura(factura)" icon-left>
+         
+
+                  <ion-thumbnail item-left>
+                      <img [src]="factura.imagen">
+                  </ion-thumbnail>
+                                               
+                    <ion-row class="info">
+                      <ion-col>
+                        <p class="titulo-tienda">{{ factura.title }}</p>
+                        <p>{{ factura.direccion }}</p>
+                        <p>{{ factura.ciudad }} ({{ factura.provincia }}) {{ factura.cp }}</p>
+                        <p><strong>{{ factura.fecha }} · {{ factura.hora }}</strong></p>
+                      </ion-col>
+                        <p class="precio-factura">{{ factura.importe }}</p>
+
+                    </ion-row>
+              
+        </button>
+
+
+        <ion-item-options slide="right">
+            <button ion-button (click)="remove(factura)"><ion-icon name="trash"></ion-icon></button>
+        </ion-item-options>
+
+    </ion-item-sliding>
+    
+  </ion-list>
+
+  <p *ngIf="factura && facturas.length == 0" color="danger">
+    No hay Facturas disponibles
+  </p>
+
+
+</ion-content>
