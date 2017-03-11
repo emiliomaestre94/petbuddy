@@ -1,5 +1,5 @@
  {
     "modo": "produccion",
-    "dominio": "https://appayservidor.herokuapp.com",
+    "dominio": "https://blablapet.herokuapp.com",
     "timeout": "0"
  }
