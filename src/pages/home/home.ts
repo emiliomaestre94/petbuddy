@@ -27,10 +27,14 @@ export class HomePage implements OnInit{
   deal : any;
   usuarios: Usuario[];
   buscadorUsuarios: string="";
+   ofertas:boolean =false;
+
   constructor(public menuCtrl: MenuController, public usuariosService: UsuariosService, public navCtrl: NavController,) {
     this.deal = "ofertas";
   }
-
+ toogle(){
+   this.ofertas=!this.ofertas;
+ }
     navegarPublicar(){
       this.navCtrl.parent.select(2); //Publicar. 
     }

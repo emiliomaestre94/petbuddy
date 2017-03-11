@@ -15,8 +15,13 @@
     <ion-fab>
       <button (click)="SeleccionarGaleria();" color="secondary" mini ion-fab><ion-icon name='camera' item-right style="color: gray"></ion-icon></button>
    </ion-fab>
-   
-   <h2>Pablo Mac</h2>
+  <h2>
+<ion-icon name="star"></ion-icon>
+<ion-icon name="star"></ion-icon>
+<ion-icon name="star"></ion-icon>
+  <ion-icon name="star-outline"></ion-icon>
+    <ion-icon name="star-outline"></ion-icon>
+    </h2>
      <ion-toolbar no-margin >
     <ion-segment [(ngModel)]="deal" color="secondary">
       <ion-segment-button value="ofertas">
@@ -37,19 +42,19 @@
 
     <ion-item>
       <ion-label active activated color="primary" stacked>Correo electrónico</ion-label>
-      <ion-input  id="correo" type="email" value="info@appay.es"></ion-input>
+      <ion-input  id="correo" type="email" value="pablomac@gmail.com"></ion-input>
        <ion-icon name='create' item-right style="color: gray"></ion-icon>
     </ion-item>
 
       <ion-item>
       <ion-label color="primary" stacked>DNI</ion-label>
-      <ion-input type="text" value="99999999H"></ion-input>
+      <ion-input type="text" value="53247946W"></ion-input>
       <ion-icon name='create' item-right style="color: gray"></ion-icon>
     </ion-item>
 
     <ion-item>
       <ion-label color="primary" stacked>Nombre</ion-label>
-      <ion-input color="#fffff" type="text" value="Jhon Doe"></ion-input>
+      <ion-input color="#fffff" type="text" value="Pablo Mac"></ion-input>
       <ion-icon name='create' item-right style="color: gray"></ion-icon>
     </ion-item>
 
@@ -73,53 +78,19 @@
   <ion-list padding *ngSwitchCase="'personalizadas'">
     <ion-item>
       <ion-avatar item-left>
-        <img src="assets/img/perfil.jpg">
+        <img src="assets/img/pastor.jpg">
       </ion-avatar>
-      <h2 style="color:black" >Pepe</h2>
+      <h2 style="color:black" >Coba</h2>
       <p>Pastor alemán</p>
     </ion-item>
      <ion-item>
       <ion-avatar item-left>
-        <img src="assets/img/perfil.jpg">
+        <img src="assets/img/gato.jpg">
       </ion-avatar>
       <h2 style="color:black" >Pancho</h2>
-      <p>Gato feo</p>
+      <p>Gato silvestre</p>
     </ion-item>
-         <ion-item>
-      <ion-avatar item-left>
-        <img src="assets/img/perfil.jpg">
-      </ion-avatar>
-      <h2 style="color:black" >Pancho</h2>
-      <p>Gato feo</p>
-    </ion-item>
-         <ion-item>
-      <ion-avatar item-left>
-        <img src="assets/img/perfil.jpg">
-      </ion-avatar>
-      <h2 style="color:black" >Pancho</h2>
-      <p>Gato feo</p>
-    </ion-item>
-         <ion-item>
-      <ion-avatar item-left>
-        <img src="assets/img/perfil.jpg">
-      </ion-avatar>
-      <h2 style="color:black" >Pancho</h2>
-      <p>Gato feo</p>
-    </ion-item>
-         <ion-item>
-      <ion-avatar item-left>
-        <img src="assets/img/perfil.jpg">
-      </ion-avatar>
-      <h2 style="color:black" >Pancho</h2>
-      <p>Gato feo</p>
-    </ion-item>
-         <ion-item>
-      <ion-avatar item-left>
-        <img src="assets/img/perfil.jpg">
-      </ion-avatar>
-      <h2 style="color:black" >Pancho</h2>
-      <p>Gato feo</p>
-    </ion-item>
+      
       <ion-fab right bottom>
          <button (click)="nuevoAnimal();" ion-fab mini color="primary"><ion-icon name="add"></ion-icon></button>
     </ion-fab>

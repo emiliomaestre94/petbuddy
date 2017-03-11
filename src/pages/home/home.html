@@ -26,7 +26,7 @@
   
   <div [ngSwitch]="deal">
   <ion-list *ngSwitchCase="'ofertas'">
-    <div *ngIf="ofertas" >
+    <div *ngIf="ofertas ==false" >
       <h1  style="color:white">¿Vas a dejarlo solo?</h1>
       <h4  style="color:white" >¡Deja que alguien de confianza cuide de tu mascota!</h4>
       <div id="containerbotones">
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div *ngIf="!ofertas" >
+    <div *ngIf="ofertas ==true" >
       <ion-card (click)="irachat()">
         <ion-item>
           <ion-avatar item-left padding-left>
@@ -50,26 +50,29 @@
       <ion-card>
         <ion-item>
           <ion-avatar item-left padding-left>
-            <img [src]="'assets/img/perfil.jpg'">
+            <img [src]="'assets/img/retrato.jpg'">
           </ion-avatar>
-          <h2>Cuidador de gato para el lunes</h2>
-          <p>Pablo Mac</p>
-          <p>16:23</p>
+          <h2>Alguien que cuide a mi perra Dana</h2>
+          <p>Cristian Gálvez</p>
+          <p>8:10</p>
         </ion-item>
       </ion-card>
 
             <ion-card>
         <ion-item>
           <ion-avatar item-left padding-left>
-            <img [src]="'assets/img/perfil.jpg'">
+            <img [src]="'assets/img/retrato2.jpg'">
           </ion-avatar>
-          <h2>Cuidador de gato para el lunes</h2>
-          <p>Pablo Mac</p>
-          <p>16:23</p>
+          <h2>Necesito cuidador de loro</h2>
+          <p>Fran Serrano</p>
+          <p>17:03</p>
         </ion-item>
       </ion-card>
 
     </div>
+         <ion-fab right bottom>
+         <button (click)="toogle();" ion-fab mini  color="primary"><ion-icon name="switch"></ion-icon></button>
+    </ion-fab>
   </ion-list>
 
   <ion-list *ngSwitchCase="'personalizadas'">
@@ -81,20 +84,20 @@
       <ion-card>
         <ion-item>
           <ion-avatar item-left padding-left>
-            <img [src]="'assets/img/perfil.jpg'">
+            <img [src]="'assets/img/retrato2.jpg'">
           </ion-avatar>
-          <h2>Marty McFly</h2>
-          <p>November 5, 1955</p>
+          <h2>Emilio Maestre</h2>
+          <p>Marzo 10, 2016</p>
         </ion-item>
         
         <ion-card-content>
-          <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+          <p>Buenas, estoy buscando a alguien que cuide a mi pastor alemán. Se llama Coba y es muy agradable.</p>
         </ion-card-content>
 
         <ion-row>
           <ion-col>
             <button  style="float:right;" ion-button clear small>
-              <div>23€</div>
+              <div>14€</div>
             </button>
           </ion-col>
         </ion-row>
@@ -104,12 +107,12 @@
           <ion-avatar item-left padding-left>
             <img [src]="'assets/img/perfil.jpg'">
           </ion-avatar>
-          <h2>Marty McFly</h2>
-          <p>November 5, 1955</p>
+          <h2>Pablo López</h2>
+          <p>Marzo 8, 2016</p>
         </ion-item>
         
         <ion-card-content>
-          <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+          <p>Hola necesito que algún cuidador se haga cargo de mi loro este lunes. Muy bien remunerado</p>
         </ion-card-content>
 
         <ion-row>
