@@ -21,7 +21,7 @@ export class AuthService{
     
   environment:ITestAppEnvConfiguration; //objeto que guarda las variables de entorno
   storage = new Storage();
-
+  token: any;
     constructor( public authHttp:AuthHttp,public http: Http,private envConfiguration: EnvConfigurationProvider<ITestAppEnvConfiguration>) {
         this.environment = envConfiguration.getConfig();
     }
@@ -31,6 +31,7 @@ export class AuthService{
         let options = new RequestOptions({ headers: headers, withCredentials: true });
         console.log(user.username);
         console.log(user.password);
+        console.log(this.environment["dominio"]);
         return this.http.post(this.environment["dominio"] + '/loginjwt', 
             JSON.stringify({username:user.username, password:user.password}), options)
             .delay(+this.environment["timeout"])

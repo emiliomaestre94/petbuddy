@@ -25,33 +25,26 @@ import { ContactPage } from '../pages/contact/contact'
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = PrincipalPage;
+  
   pages: Array<{icon: string, title: string, component: any}>;
   pages2: Array<{icon: string, title: string, component: any}>;
   storage = new Storage();
   nombreTienda;
   foto;
   nombre;
-
+  rootPage: any = PrincipalPage;
   constructor(public platform: Platform, private alertCtrl: AlertController, public loadingCtrl: LoadingController,public authService: AuthService) {
     this.initializeApp();
-    /*
-    console.log("te inicias");
-    if(this.storage.get('id_token'))
-      console.log("no encontrado token");
-    else
-       console.log("token encontrado");
 
-      let hola=this.storage.get('id_token');
-      console.log(hola);
-      */
 
     //Para coger los datos del token
     this.storage.ready().then(() => {
+      
       this.storage.get('id_token').then((nombre_tienda) => {
-        this.nombreTienda = nombre_tienda;
-        console.log(this.nombreTienda);
+        this.authService.token = nombre_tienda;
+        console.log(this.authService.token);
       });
+    
     });
 
 

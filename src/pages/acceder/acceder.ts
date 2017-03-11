@@ -1,3 +1,4 @@
+import { TabsPage } from './../tabs/tabs';
 import { ScanStore } from './../scanstore/scanstore';
 import { AuthService } from './../../services/auth.service';
 import { Component } from '@angular/core';
@@ -36,7 +37,7 @@ export class AccederPage {
             if (res[0].status==200){ //todo bien
                    console.log("Acceso correcto");
                    loader.dismiss();
-                   this.navCtrl.setRoot(ScanStore);
+                   this.navCtrl.setRoot(TabsPage);
             }
         }
         else{
